@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Dennis Griffith">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monty Python and the Holy Grail: Retrieve the Grail!</title>
+        <link rel="stylesheet" href="stylesheets/reset.css">
+        <link rel="stylesheet" href="stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+    </head>
+    <body id="body" class="wait">
+        <div class="container-fluid mainCont toggle">
+            <div class="navbar navbar-toggleable-md navbar-inverse bgColor quarter">
+                <div class="nav-item">
+                </div>
+                <div class="nav-item justify-content-center">
+                    <p class="text-center menuTxt">Monty Python and the Holy Grail's</p>
+                    <p class="text-center menuTxt">Attack the Frenchmen!</p>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle smallMenuTxt" data-toggle="dropdown">
+                      Menu
+                    </button>
+                    <div class="dropdown-menu dropDownBG">
+                      <a class="dropdown-item smallMenuTxt" href="#" id="reset">Reset</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row rwbtm justify-content-center quarter">
+                <div class="width15 scoreText">
+                    <div class="fourty">
+                    <p id="arthurScore" class="text-center">King Arthur and his knights</p>
+                    <img src="media/pictures/HolyHandGrenade1.png" alt="Holy Hand Grenade 1" id="holyHandGrenade1" class="toggle">
+                    <img src="media/pictures/HolyHandGrenade1.png" alt="Holy Hand Grenade 2" id="holyHandGrenade2" class="toggle">
+                    <img src="media/pictures/HolyHandGrenade1.png" alt="Holy Hand Grenade 3" id="holyHandGrenade3" class="toggle">
+                    </div>
+                    <div class="sixty">
+                    </div>
+                </div>
+                <div class="width70 justify-content-center text-center" >
+                </div>
+                <div class="width15 scoreText">
+                    <div class="fourty">
+                    <p id="frenchScore" class="text-center">The Frenchmen</p>
+                    <img src="media/pictures/cow.png" alt="Cow 1" id="cow1" class="toggle">
+                    <img src="media/pictures/cow.png" alt="Cow 2" id="cow2" class="toggle">
+                    <img src="media/pictures/cow.png" alt="Cow 3" id="cow3" class="toggle">
+                    <img src="media/pictures/cow.png" alt="Cow 4" id="cow4" class="toggle">
+                    <img src="media/pictures/cow.png" alt="Cow 5" id="cow5" class="toggle">
+                    <img src="media/pictures/woodenrabbit.png" alt="rabbit 1" id="rabbit1" class="toggle">
+                    <img src="media/pictures/woodenrabbit.png" alt="rabbit 2" id="rabbit2" class="toggle">
+                    <img src="media/pictures/woodenrabbit.png" alt="rabbit 3" id="rabbit3" class="toggle">
+                    <img src="media/pictures/woodenrabbit.png" alt="rabbit 4" id="rabbit4" class="toggle">
+                    <img src="media/pictures/woodenrabbit.png" alt="rabbit 5" id="rabbit5" class="toggle">
+                    </div>
+                    <div class="sixty">
+                    </div>
+                </div>
+            </div>
+            <div class="row quarter">
+                <div class="col-sm-3 col-xs-3 justify-content-center align-content-center below575" id="leftspeech">
+                    <p class="text-center letterchoice2"></p>
+                </div>
+                <div class="col-sm-6 col-xs-6 justify-content-center text-center wrongChoice below575larger">
+                </div>
+                <div class="col-sm-3 col-xs-3 text-center below575">
+                    <img src="media/pictures/castlewall.png" alt="castle turrett" class="img img-fluid grass castle" id="castleTop">
+                </div>
+            </div>
+            <div class="row quarter">
+                <div class="col-sm-3 col-xs-3 justify-content-center text-center parent below575">
+                    <img src="media/pictures/grass.png" alt="grass" class="img img-fluid grass">
+                    <img src="media/pictures/kingarthur.png" alt="Knights" class="img img-fluid arthur">
+                </div>
+                <div class="col-sm-3 col-xs-3 below575">
+                    <img src="media/pictures/grass.png" alt="grass" class="img img-fluid grass">
+                </div>
+                <div class="col-sm-3 col-xs-3 below575">
+                    <img src="media/pictures/grass.png" alt="grass" class="img img-fluid grass">
+                </div>
+                <div class="col-sm-3 col-xs-3 wallBG text-center parent below575">
+                    <img src="media/pictures/castlewallbottom.png" alt="castle wall" class="img img-fluid grass castle" id="castleBottom">
+                    <img src="media/pictures/Frenchman2.png" alt="First Frenchman" class="img img-fluid french" id="french1">
+                    <img src="media/pictures/frenchman1.png" alt="Second Frenchman" class="img img-fluid french" id="french2">
+                    <img src="media/pictures/explosion.png" alt="explosion" class="img-fluid toggle" id="explosion">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid gifDiv toggle">
+            <div class="row gifDivRow text-center">
+                <img src="media/gifs/cow.gif" alt="Oh no!" class="img-fluid" id="loseGif">
+            </div>
+        </div>
+        <div id="handGrenade">
+            <img src="media/pictures/HolyHandGrenade1.png" alt="Holy Hand Grenade" class="img-fluid">
+        </div>
+        <div class="container-fluid" id="startDiv">
+            <div class="row quarter">
+                <div class="col-sm-3 col-xs-3"></div>  
+                <div class="col-sm-6 col-xs-6"></div>
+                <div class="col-sm-3 col-xs-3"></div>
+            </div>
+            <div class="row half">
+                <div class="col-sm-3 col-xs-3 divWidth"></div> 
+                <div class="col-sm-6 col-xs-6" id="startMidDiv">
+                    <button id="startButton">Start</button>
+                    <button id="rulesButton">How to Play</button>
+                </div>
+                <div class="col-sm-3 col-xs-3 divWidth"></div>
+            </div>
+            <div class="row quarter text-center" id="instructions">
+                <p class="text-center">
+                    You must attack the castle belonging to Guy de Loimbard. His French Guards say that they have the Holy Grail (it's very nice) and they refuse to give it to you. <br>
+                    The French guard will choose a random letter from the first half of the alphabet. You will have 5 guesses to get it right. If you get the guesses wrong, then fetchez la vache. <br>
+                    If the French fetchez la vache, then the guard will choose another random letter from the second half of the alphabet. If you do not get it right in 5 tries, well, you will see.<br>
+                    Each time you get an answer right, the French guard will choose another letter. Get 3 guesses right to obtain the Holy Hand Grenade of Antioch,<br>
+                    which God hath granteth that thoust may smite thy foes.<br>
+                    And be aware! The French are sneaky and may choose the same letter again!<br>
+                    <span id="moose">A moose bit my sister once. She was carving her initials on the moose with the sharpened end of an interspace toothbrush.</span>
+                </p>  
+            </div>    
+        </div>
+        <script src="javascript/jquery.js"></script>
+        <script src="javascript/bootstrap.bundle.js"></script>
+        <script src="javascript/javascript.js"></script>
+        <script src="javascript/gamelogic.js"></script>
+    </body>
+</html>
